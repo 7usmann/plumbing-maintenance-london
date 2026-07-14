@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plumbing And Maintenance London Ltd | Plumber, Electrician &amp; Decorator in West Hampstead</title>
+<meta name="description" content="Plumbing And Maintenance London Ltd — plumbing, electrical, heating and painting work across West Hampstead and North West London. Rated 4.8 stars from 33 Google reviews. Family-run, shopfront on Fortune Green Rd.">
+
+<!-- Pitch demo — not the live site. Keep this out of search results until the
+     client has taken over the domain/hosting. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Plumbing And Maintenance London Ltd | West Hampstead">
+<meta property="og:description" content="Plumbing, electrical, heating and painting — one team, one call. Rated 4.8 stars from 33 Google reviews. Based on Fortune Green Rd, NW6.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.pexels.com/photos/5691548/pexels-photo-5691548.jpeg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Plumbing And Maintenance London Ltd",
+  "image": "https://images.pexels.com/photos/5691548/pexels-photo-5691548.jpeg",
+  "telephone": "+442077941578",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "60 Fortune Green Rd",
+    "addressLocality": "London",
+    "postalCode": "NW6 1DT",
+    "addressCountry": "GB"
+  },
+  "areaServed": "West Hampstead and North West London",
+  "priceRange": "££",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "33"
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday"], "opens": "08:30", "closes": "16:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "15:00" }
+  ]
+}
+</script>
+
+<style>
+  :root { --serif: 'Fraunces', serif; --sans: 'Inter', sans-serif; }
+  body { font-family: var(--sans); }
+  h1, h2, h3, .font-display { font-family: var(--serif); }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes countIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal { opacity: 0; }
+  .reveal.is-visible { animation: fadeInUp 0.7s ease-out forwards; }
+  .reveal.is-visible.d1 { animation-delay: .08s; }
+  .reveal.is-visible.d2 { animation-delay: .16s; }
+  .reveal.is-visible.d3 { animation-delay: .24s; }
+
+  .filmstrip img { filter: saturate(0.92); }
+</style>
+</head>
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+<!-- ===== Utility bar ===== -->
+<div class="bg-emerald-950 text-stone-200 text-xs sm:text-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+    <p class="flex items-center gap-2">
+      <span class="inline-block w-2 h-2 rounded-full bg-amber-400" id="hours-dot"></span>
+      <span id="hours-status">Checking today's hours&hellip;</span>
+    </p>
+    <p class="flex items-center gap-4">
+      <span class="hidden sm:inline text-stone-400">60 Fortune Green Rd, NW6 1DT</span>
+      <a href="tel:+442077941578" class="font-semibold text-white hover:text-amber-300 transition">020 7794 1578</a>
+    </p>
+  </div>
+</div>
+
+<!-- ===== Header / Nav ===== -->
+<header class="bg-stone-50/95 backdrop-blur sticky top-0 z-50 border-b border-stone-200">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between py-4">
+      <a href="#" class="flex items-center gap-3">
+        <span class="flex items-center justify-center w-11 h-11 rounded-full bg-emerald-900 text-amber-300 font-display font-semibold text-base shrink-0">P&amp;M</span>
+        <span class="font-display font-semibold text-lg leading-tight text-emerald-950">Plumbing &amp; Maintenance<br class="hidden sm:block"> <span class="text-stone-500 font-sans text-sm font-medium">London Ltd</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-stone-600">
+        <a href="#services" class="hover:text-emerald-900 transition">Services</a>
+        <a href="#trust" class="hover:text-emerald-900 transition">Reviews</a>
+        <a href="#gallery" class="hover:text-emerald-900 transition">Gallery</a>
+        <a href="#about" class="hover:text-emerald-900 transition">About</a>
+        <a href="#hours" class="hover:text-emerald-900 transition">Hours</a>
+        <a href="#contact" class="hover:text-emerald-900 transition">Contact</a>
+      </nav>
+      <a href="tel:+442077941578" class="inline-flex items-center gap-2 bg-emerald-900 hover:bg-emerald-800 text-white font-semibold text-sm px-4 py-2.5 rounded-lg transition shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        Call now
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="relative overflow-hidden bg-gradient-to-b from-emerald-950 via-emerald-950 to-emerald-900">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 24px 24px;"></div>
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-14 md:pt-24 md:pb-20 text-center">
+    <p class="text-amber-300 font-semibold tracking-wide uppercase text-sm mb-4 reveal">Plumbing &middot; Electrical &middot; Heating &middot; Painting &middot; West Hampstead</p>
+    <h1 class="font-display text-4xl md:text-5xl font-semibold text-white leading-tight mb-6 reveal">
+      One trusted team for every job on the list.
+    </h1>
+    <p class="text-lg text-stone-300 mb-8 max-w-2xl mx-auto reveal">
+      Plumbing And Maintenance London Ltd is a family-run, multi-trade firm based on Fortune Green Rd —
+      plumbing, electrics, heating and decorating, handled by one team you can actually get hold of.
+      Rated 4.8 stars from 33 Google reviews.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center reveal">
+      <a href="tel:+442077941578" class="inline-flex items-center justify-center gap-2 bg-amber-400 hover:bg-amber-300 text-emerald-950 font-bold text-base px-6 py-3.5 rounded-lg transition shadow-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+        Call 020 7794 1578
+      </a>
+      <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-base px-6 py-3.5 rounded-lg transition">
+        Get a quote
+      </a>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-2 mt-10 reveal">
+      <span class="bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full border border-white/10">Plumbing</span>
+      <span class="bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full border border-white/10">Electrical</span>
+      <span class="bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full border border-white/10">Heating</span>
+      <span class="bg-white/10 text-white text-sm font-medium px-4 py-2 rounded-full border border-white/10">Painting &amp; decorating</span>
+    </div>
+    <div class="flex items-center justify-center gap-2 mt-6 text-stone-300 text-sm reveal">
+      <div class="flex text-amber-300 text-base">★★★★★</div>
+      <span>4.8 from 33 Google reviews &middot; Landlords &amp; homeowners welcome</span>
+    </div>
+  </div>
+
+  <!-- Filmstrip -->
+  <div class="relative filmstrip grid grid-cols-2 sm:grid-cols-4">
+    <img src="https://images.pexels.com/photos/8488061/pexels-photo-8488061.jpeg" alt="Plumber's tools laid out for a job" class="w-full h-32 sm:h-40 object-cover">
+    <img src="https://images.pexels.com/photos/33118659/pexels-photo-33118659.jpeg" alt="Electrician working on a consumer unit" class="w-full h-32 sm:h-40 object-cover">
+    <img src="https://images.pexels.com/photos/34938442/pexels-photo-34938442.jpeg" alt="Engineer servicing a heating system" class="w-full h-32 sm:h-40 object-cover">
+    <img src="https://images.pexels.com/photos/6474200/pexels-photo-6474200.jpeg" alt="Decorator painting an interior wall" class="w-full h-32 sm:h-40 object-cover">
+  </div>
+</section>
+
+<!-- ===== Services ===== -->
+<section id="services" class="py-20 bg-stone-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="text-emerald-800 font-semibold uppercase tracking-wide text-sm mb-2">Services</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-emerald-950">What we cover</h2>
+      <p class="text-stone-500 mt-4">One call books the job — no juggling separate tradespeople for a property that needs a bit of everything.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal p-6 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M5 8h14M6 8v10a2 2 0 002 2h8a2 2 0 002-2V8M10 12h4"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-emerald-950 mb-2">General plumbing</h3>
+        <p class="text-stone-500 text-sm">Tap changes, toilet seat fitting, shower mixer installs, pipework adjustments — the everyday jobs, sorted properly.</p>
+      </div>
+
+      <div class="reveal p-6 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-emerald-950 mb-2">Electrical work</h3>
+        <p class="text-stone-500 text-sm">General electrical repairs and installations carried out alongside the rest of your job list.</p>
+      </div>
+
+      <div class="reveal p-6 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-8.25 3.75h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-emerald-950 mb-2">Heating systems</h3>
+        <p class="text-stone-500 text-sm">Heating repairs and system work to keep the property running through the year.</p>
+      </div>
+
+      <div class="reveal p-6 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-emerald-950 mb-2">Painting &amp; decorating</h3>
+        <p class="text-stone-500 text-sm">Interior and exterior decorating to finish a job properly, not just patch it.</p>
+      </div>
+
+      <div class="reveal p-6 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.909 4.909m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-emerald-950 mb-2">General maintenance &amp; handyman</h3>
+        <p class="text-stone-500 text-sm">Small jobs and large — the property maintenance list that never quite gets done, actually done.</p>
+      </div>
+
+      <div class="reveal p-6 rounded-xl bg-white border border-stone-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/></svg>
+        </div>
+        <h3 class="font-display font-semibold text-lg text-emerald-950 mb-2">Landlord &amp; property management</h3>
+        <p class="text-stone-500 text-sm">Ongoing works for landlords, property managers and short-let hosts — one team across a whole portfolio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Trust / Testimonials ===== -->
+<section id="trust" class="py-20 bg-emerald-950 relative overflow-hidden">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+      <p class="text-amber-300 font-semibold uppercase tracking-wide text-sm mb-2">Reviews</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-white">What West Hampstead thinks of us</h2>
+      <div class="flex items-center justify-center gap-2 mt-4 text-white/70 text-sm">
+        <span class="text-amber-300 text-base">★★★★★</span>
+        <span>4.8 &middot; 33 Google reviews</span>
+      </div>
+    </div>
+
+    <!-- Featured story -->
+    <div class="reveal bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 max-w-3xl mx-auto mb-10">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-300/70 mb-4" fill="currentColor" viewBox="0 0 24 24"><path d="M7.17 6C4.87 6 3 7.87 3 10.17c0 2.3 1.87 4.17 4.17 4.17.36 0 .71-.05 1.04-.14C7.5 16.5 5.9 18 4 18v2c3.87 0 7-3.13 7-7v-2.83C11 7.87 9.13 6 7.17 6zm10 0C14.87 6 13 7.87 13 10.17c0 2.3 1.87 4.17 4.17 4.17.36 0 .71-.05 1.04-.14-.71 2.3-2.31 3.8-4.21 3.8v2c3.87 0 7-3.13 7-7v-2.83C21 7.87 19.13 6 17.17 6z"/></svg>
+      <p class="text-white text-lg md:text-xl font-medium leading-relaxed">
+        "When a kitchen sink system failed mid-day, the team got out to us quickly and sorted it under real pressure —
+        exactly when a busy day centre couldn't afford for it to wait."
+      </p>
+      <p class="text-white/50 text-sm mt-4 font-medium">Age UK Camden &mdash; day centre for older people</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div class="reveal bg-white/5 border border-white/10 rounded-xl p-6">
+        <div class="text-amber-300 mb-3">★★★★★</div>
+        <p class="text-white/80 mb-4 text-sm">"Alex came out quickly to quote, fitted a new shower mixer and adjusted the pipework — communication by phone and email was excellent throughout."</p>
+        <p class="text-white/50 text-sm font-medium">Shower mixer installation</p>
+      </div>
+      <div class="reveal bg-white/5 border border-white/10 rounded-xl p-6">
+        <div class="text-amber-300 mb-3">★★★★★</div>
+        <p class="text-white/80 mb-4 text-sm">"Toilet seat fitted promptly. We've used them for several jobs now and the team's consistently friendly and helpful every time."</p>
+        <p class="text-white/50 text-sm font-medium">Repeat customer</p>
+      </div>
+      <div class="reveal bg-white/5 border border-white/10 rounded-xl p-6">
+        <div class="text-amber-300 mb-3">★★★★★</div>
+        <p class="text-white/80 mb-4 text-sm">"Needed an urgent fix between guest bookings — service was excellent and genuinely cost-effective."</p>
+        <p class="text-white/50 text-sm font-medium">Airbnb host</p>
+      </div>
+    </div>
+
+    <div class="reveal flex flex-wrap justify-center gap-3 mt-14">
+      <span class="bg-white/10 text-white/90 text-sm font-medium px-4 py-2 rounded-full">Family-run since day one</span>
+      <span class="bg-white/10 text-white/90 text-sm font-medium px-4 py-2 rounded-full">Shopfront on Fortune Green Rd</span>
+      <span class="bg-white/10 text-white/90 text-sm font-medium px-4 py-2 rounded-full">Landlord &amp; portfolio work welcome</span>
+      <span class="bg-white/10 text-white/90 text-sm font-medium px-4 py-2 rounded-full">Fast, clear communication</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section id="gallery" class="py-20 bg-stone-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="text-emerald-800 font-semibold uppercase tracking-wide text-sm mb-2">Gallery</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-emerald-950">The kind of work we do</h2>
+      <!-- PLACEHOLDER — confirm with client: no photos of the team's actual past jobs
+           were supplied for this build. These are real stock photos standing in until
+           real job photos are available — swap in before/after shots once the client
+           sends them over (mention on the pitch call). -->
+      <p class="text-stone-500 mt-4">Stock photography shown for illustration &mdash; real job photos to follow.</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="https://images.pexels.com/photos/8488061/pexels-photo-8488061.jpeg" alt="Plumber's tools laid out ready for a job" class="reveal w-full h-56 object-cover rounded-xl hover:scale-[1.03] transition duration-300">
+      <img src="https://images.pexels.com/photos/33118659/pexels-photo-33118659.jpeg" alt="Electrician working on wiring" class="reveal w-full h-56 object-cover rounded-xl hover:scale-[1.03] transition duration-300">
+      <img src="https://images.pexels.com/photos/34938442/pexels-photo-34938442.jpeg" alt="Engineer maintaining a heating system" class="reveal w-full h-56 object-cover rounded-xl hover:scale-[1.03] transition duration-300">
+      <img src="https://images.pexels.com/photos/6474200/pexels-photo-6474200.jpeg" alt="Decorator painting an interior wall" class="reveal w-full h-56 object-cover rounded-xl hover:scale-[1.03] transition duration-300">
+      <img src="https://images.pexels.com/photos/7218683/pexels-photo-7218683.jpeg" alt="Close-up of painting and decorating tools" class="reveal w-full h-56 object-cover rounded-xl hover:scale-[1.03] transition duration-300">
+      <img src="https://images.pexels.com/photos/6004890/pexels-photo-6004890.jpeg" alt="Handyman carrying out general property maintenance" class="reveal w-full h-56 object-cover rounded-xl hover:scale-[1.03] transition duration-300">
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+    <div class="reveal order-2 md:order-1">
+      <p class="text-emerald-800 font-semibold uppercase tracking-wide text-sm mb-2">About</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-emerald-950 mb-6">Established, but still a family firm</h2>
+      <p class="text-stone-600 mb-4">
+        Plumbing And Maintenance London Ltd runs from a real shopfront on Fortune Green Rd in West Hampstead —
+        a registered company with a physical base, not just a callout number. Reviews and regulars both describe
+        the same thing: a friendly, family-run team that happens to also be properly set up.
+      </p>
+      <p class="text-stone-600 mb-6">
+        Alex handles quoting and jobs directly and is named again and again in reviews for turning up, communicating
+        clearly by phone and email, and following through. Whether it's a single tap or a full room of decorating,
+        it's the same team either way.
+      </p>
+      <div class="grid grid-cols-3 gap-4 mb-6">
+        <div class="reveal">
+          <p class="font-display text-3xl font-semibold text-emerald-950" data-count-to="4.8">0</p>
+          <p class="text-stone-500 text-xs mt-1">Google rating</p>
+        </div>
+        <div class="reveal d1">
+          <p class="font-display text-3xl font-semibold text-emerald-950" data-count-to="33">0</p>
+          <p class="text-stone-500 text-xs mt-1">Google reviews</p>
+        </div>
+        <div class="reveal d2">
+          <p class="font-display text-3xl font-semibold text-emerald-950" data-count-to="4">0</p>
+          <p class="text-stone-500 text-xs mt-1">Trades under one roof</p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-stone-100 text-stone-700 text-sm font-medium px-4 py-2 rounded-full border border-stone-200">Registered Ltd company</span>
+        <span class="bg-stone-100 text-stone-700 text-sm font-medium px-4 py-2 rounded-full border border-stone-200">Real shopfront, NW6</span>
+        <span class="bg-stone-100 text-stone-700 text-sm font-medium px-4 py-2 rounded-full border border-stone-200">Landlords welcome</span>
+      </div>
+      <!-- PLACEHOLDER — Gas Safe registration and any other trade certifications are
+           not confirmed anywhere in the sourced material. Do not add a Gas Safe or
+           other certification badge here unless the client confirms it directly. -->
+    </div>
+    <div class="reveal order-1 md:order-2 relative">
+      <img src="https://images.pexels.com/photos/32391493/pexels-photo-32391493.jpeg" alt="Tradesperson carrying out general property maintenance work" class="rounded-xl w-full h-80 object-cover shadow-lg">
+      <div class="absolute -bottom-5 -left-5 bg-emerald-950 text-white rounded-xl px-5 py-4 shadow-lg hidden sm:block">
+        <p class="font-display text-lg font-semibold">Fortune Green Rd</p>
+        <p class="text-white/60 text-xs">West Hampstead, NW6</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hours ===== -->
+<section id="hours" class="py-20 bg-stone-100">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+      <p class="text-emerald-800 font-semibold uppercase tracking-wide text-sm mb-2">Opening hours</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-emerald-950">Set daytime hours, dependably kept</h2>
+      <p class="text-stone-500 mt-4">Not a 24/7 operation &mdash; a firm with a shopfront and hours you can rely on.</p>
+    </div>
+    <div class="reveal bg-white rounded-2xl border border-stone-200 shadow-sm overflow-hidden divide-y divide-stone-100" id="hours-table">
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="1"><span class="font-medium text-stone-700">Monday</span><span class="text-stone-500">8:30am &ndash; 4:00pm</span></div>
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="2"><span class="font-medium text-stone-700">Tuesday</span><span class="text-stone-500">8:30am &ndash; 4:00pm</span></div>
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="3"><span class="font-medium text-stone-700">Wednesday</span><span class="text-stone-400">Closed</span></div>
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="4"><span class="font-medium text-stone-700">Thursday</span><span class="text-stone-500">8:30am &ndash; 4:00pm</span></div>
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="5"><span class="font-medium text-stone-700">Friday</span><span class="text-stone-500">8:30am &ndash; 4:00pm</span></div>
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="6"><span class="font-medium text-stone-700">Saturday</span><span class="text-stone-500">9:00am &ndash; 3:00pm</span></div>
+      <div class="flex items-center justify-between px-6 py-3.5" data-day="0"><span class="font-medium text-stone-700">Sunday</span><span class="text-stone-400">Closed</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="text-emerald-800 font-semibold uppercase tracking-wide text-sm mb-2">Get in touch</p>
+      <h2 class="font-display text-3xl md:text-4xl font-semibold text-emerald-950">Get a quote</h2>
+      <p class="text-stone-500 mt-4">Call or send a message &mdash; Alex will get back to you.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+      <!-- Contact form -->
+      <div class="reveal">
+        <form id="contact-form" class="space-y-4">
+          <input type="hidden" name="access_key" value="91c05fa1-65f3-479c-8896-1b344536b1ce">
+          <input type="hidden" name="subject" value="New enquiry — Plumbing And Maintenance London Ltd">
+          <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+          <div>
+            <label for="name" class="block text-sm font-medium text-emerald-950 mb-1">Name</label>
+            <input type="text" id="name" name="name" required class="w-full rounded-lg border border-stone-200 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+          </div>
+          <div>
+            <label for="phone" class="block text-sm font-medium text-emerald-950 mb-1">Phone</label>
+            <input type="tel" id="phone" name="phone" required class="w-full rounded-lg border border-stone-200 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-700">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-emerald-950 mb-1">What do you need doing?</label>
+            <textarea id="message" name="message" rows="4" required class="w-full rounded-lg border border-stone-200 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-emerald-700"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-emerald-900 hover:bg-emerald-800 text-white font-semibold px-6 py-3.5 rounded-lg transition">
+            Send enquiry
+          </button>
+          <p id="form-result" class="text-sm mt-2"></p>
+          <p class="text-xs text-stone-400">Your details are only used to get back to you about your enquiry.</p>
+        </form>
+      </div>
+
+      <!-- Direct contact + map -->
+      <div class="reveal space-y-6">
+        <a href="tel:+442077941578" class="flex items-center gap-4 p-5 rounded-xl border border-stone-100 hover:border-emerald-400 hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-lg bg-emerald-50 flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-800" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+          </div>
+          <div>
+            <p class="font-semibold text-emerald-950">Call</p>
+            <p class="text-stone-500 text-sm">020 7794 1578</p>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-4 p-5 rounded-xl border border-stone-100">
+          <div class="w-12 h-12 rounded-lg bg-amber-50 flex items-center justify-center shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-semibold text-emerald-950">Visit the shopfront</p>
+            <p class="text-stone-500 text-sm">60 Fortune Green Rd, London NW6 1DT</p>
+          </div>
+        </div>
+
+        <!-- PLACEHOLDER — no mobile/WhatsApp-capable number was supplied for this
+             business, only the landline above. Add a WhatsApp click-to-chat link
+             here once a mobile number is confirmed with the client. -->
+
+        <div class="rounded-xl overflow-hidden border border-stone-100 h-48">
+          <iframe
+            src="https://www.google.com/maps?q=60+Fortune+Green+Rd,+London+NW6+1DT&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Plumbing And Maintenance London Ltd — 60 Fortune Green Rd, NW6">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="bg-emerald-950 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 text-white/70 text-sm">
+    <div class="flex items-start gap-3">
+      <span class="flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-amber-300 font-display font-semibold text-sm shrink-0">P&amp;M</span>
+      <div>
+        <p class="text-white font-display font-semibold text-lg mb-2">Plumbing &amp; Maintenance London Ltd</p>
+        <p>Plumbing, electrical, heating and painting work covering West Hampstead and North West London.</p>
+      </div>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-2">Contact</p>
+      <p>60 Fortune Green Rd, London NW6 1DT</p>
+      <p class="mt-1"><a href="tel:+442077941578" class="hover:text-amber-300 transition">020 7794 1578</a></p>
+    </div>
+    <div>
+      <p class="text-white font-semibold mb-2">Opening hours</p>
+      <p>Mon, Tue, Thu, Fri: 8:30am&ndash;4pm</p>
+      <p>Sat: 9am&ndash;3pm &middot; Wed &amp; Sun: Closed</p>
+    </div>
+  </div>
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 pt-8 border-t border-white/10 text-white/40 text-xs">
+    &copy; 2026 Plumbing And Maintenance London Ltd. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const form = document.getElementById('contact-form');
+  const result = document.getElementById('form-result');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    result.textContent = 'Sending...';
+    result.className = 'text-sm mt-2 text-stone-500';
+
+    const formData = new FormData(form);
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+      .then(async (response) => {
+        let jsonResponse = await response.json();
+        if (response.status === 200) {
+          result.textContent = "Thanks — your message has been sent. Alex will be in touch shortly.";
+          result.className = 'text-sm mt-2 text-emerald-700 font-medium';
+          form.reset();
+        } else {
+          console.error(jsonResponse);
+          result.textContent = jsonResponse.message || "Something went wrong. Please call instead.";
+          result.className = 'text-sm mt-2 text-red-600 font-medium';
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        result.textContent = "Something went wrong. Please call instead.";
+        result.className = 'text-sm mt-2 text-red-600 font-medium';
+      });
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach((el) => observer.observe(el));
+
+  // Count-up stats when scrolled into view
+  const counters = document.querySelectorAll('[data-count-to]');
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.getAttribute('data-count-to'));
+      const isDecimal = String(target).includes('.');
+      const duration = 900;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const value = target * progress;
+        el.textContent = isDecimal ? value.toFixed(1) : Math.round(value);
+        if (progress < 1) requestAnimationFrame(tick);
+        else el.textContent = isDecimal ? target.toFixed(1) : target;
+      }
+      requestAnimationFrame(tick);
+      counterObserver.unobserve(el);
+    });
+  }, { threshold: 0.4 });
+  counters.forEach((el) => counterObserver.observe(el));
+
+  // Opening-hours status (utility bar + hours table highlight)
+  (function () {
+    const hours = { 0: null, 1: [8.5, 16], 2: [8.5, 16], 3: null, 4: [8.5, 16], 5: [8.5, 16], 6: [9, 15] };
+    const now = new Date();
+    const day = now.getDay();
+    const time = now.getHours() + now.getMinutes() / 60;
+    const today = hours[day];
+    const isOpen = today && time >= today[0] && time < today[1];
+
+    const dot = document.getElementById('hours-dot');
+    const status = document.getElementById('hours-status');
+    if (isOpen) {
+      dot.className = 'inline-block w-2 h-2 rounded-full bg-green-400';
+      status.textContent = 'Open now';
+    } else {
+      dot.className = 'inline-block w-2 h-2 rounded-full bg-stone-400';
+      status.textContent = 'Closed right now';
+    }
+
+    const rows = document.querySelectorAll('#hours-table [data-day]');
+    rows.forEach((row) => {
+      if (parseInt(row.getAttribute('data-day'), 10) === day) {
+        row.classList.add('bg-emerald-50');
+      }
+    });
+  })();
+</script>
+
+<!-- Pitch demo watermark — remove once the client signs off and takes over the site. -->
+<div class="fixed bottom-4 right-4 z-50 bg-emerald-950/90 text-white/80 text-xs font-medium px-3 py-1.5 rounded-full shadow-lg border border-white/10 pointer-events-none select-none">
+  Demo built by Usman · not the live site
+</div>
+
+</body>
+</html>
